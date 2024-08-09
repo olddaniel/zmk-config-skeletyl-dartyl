@@ -24,6 +24,30 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+        };
+
+        caps {
+            bindings = <&kp CAPS>;
+            key-positions = <0 10>;
+        };
+
+        back {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <8 9>;
+        };
+
+        del {
+            bindings = <&kp DEL>;
+            key-positions = <9 19>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
