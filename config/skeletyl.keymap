@@ -1,12 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-#define CDH 0
-#define CNR 1
-#define LWR 2
-#define RSE 3
-#define ADJ 4
-
 / {
     behaviors {
         hm: homerow_mods {
