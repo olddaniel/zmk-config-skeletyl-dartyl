@@ -46,6 +46,18 @@
             bindings = <&kp DEL>;
             key-positions = <9 19>;
         };
+
+        gamemode {
+            bindings = <&to 3>;
+            key-positions = <13 14 15 16>;
+            layers = <0 1 2 3>;
+        };
+
+        qwerty {
+            bindings = <&to 0>;
+            key-positions = <3 4 5 6>;
+            layers = <0 2 1 3>;
+        };
     };
 
     keymap {
@@ -82,6 +94,17 @@
             >;
 
             label = "ADJUST";
+        };
+
+        GAMEMODE {
+            bindings = <
+&hm TAB ESC     &kp Q  &kp W   &kp E   &kp R     &kp T   &kp Y   &trans  &trans  &kp P
+&kp LEFT_SHIFT  &kp A  &kp S   &kp D   &kp F     &trans  &trans  &trans  &trans  &trans
+&kp LCTRL       &kp Z  &kp X   &kp C   &kp V     &kp B   &trans  &trans  &trans  &trans
+                       &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "GAMEMODE";
         };
     };
 };
