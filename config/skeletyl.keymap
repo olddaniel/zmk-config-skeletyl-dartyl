@@ -34,7 +34,7 @@
 
         caps {
             bindings = <&kp CAPS>;
-            key-positions = <0 10>;
+            key-positions = <0 10 20>;
         };
 
         back {
@@ -76,9 +76,9 @@
 
         LOWER {
             bindings = <
-&kp N1          &kp N2       &kp N3    &kp N4          &kp N5             &kp N6            &kp N7             &kp N8                &kp N9                 &kp N0
-&hm GRAVE EXCL  &kp AT_SIGN  &kp HASH  &kp DOLLAR      &kp PERCENT        &kp CARET         &kp AMPERSAND      &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS
-&kp EQUAL       &kp MINUS    &kp PLUS  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
+&kp N1          &kp N2       &kp N3    &kp N4          &kp N5             &kp N6            &kp N7             &kp N8            &kp N9                &kp N0
+&hm GRAVE EXCL  &kp AT_SIGN  &kp HASH  &kp DOLLAR      &kp PERCENT        &kp CARET         &kp AMPERSAND      &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp EQUAL       &kp MINUS    &kp PLUS  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SINGLE_QUOTE  &kp SEMICOLON         &kp NON_US_BACKSLASH
                              &trans    &trans          &trans             &trans            &trans             &trans
             >;
 
