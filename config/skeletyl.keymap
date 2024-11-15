@@ -49,13 +49,13 @@
 
         gamemode {
             bindings = <&to 0>;
-            key-positions = <13 14 15 16>;
+            key-positions = <13 11 2>;
             layers = <0 1>;
         };
 
         qwerty {
             bindings = <&to 0>;
-            key-positions = <3 4 5 6>;
+            key-positions = <11 12 13>;
             layers = <0 1>;
         };
     };
