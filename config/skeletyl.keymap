@@ -52,7 +52,7 @@
         };
 
         gamemode {
-            bindings = <&to 0>;
+            bindings = <&to 3>;
             key-positions = <13 11 2>;
             layers = <0 1 3 2>;
         };
