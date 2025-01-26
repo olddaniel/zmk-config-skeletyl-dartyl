@@ -100,10 +100,10 @@
         FUNC {
             label = "FUNC";
             bindings = <
-&trans  &kp W   &trans  &trans  &kp T     &trans  &trans                  &trans                   &trans  &trans
-&kp A   &trans  &trans  &trans  &trans    &trans  &kp J                   &trans                   &trans  &trans
-&trans  &kp Z   &kp X   &kp C   &kp V     &trans  &trans                  &trans                   &trans  &trans
-                &trans  &trans  &trans    &trans  &kp LC(LG(LEFT_ARROW))  &kp LG(LC(RIGHT_ARROW))
+&trans     &kp RC(W)  &trans     &trans     &kp RC(T)    &trans  &trans                  &trans                   &trans  &trans
+&kp RC(A)  &trans     &trans     &trans     &trans       &trans  &kp RC(J)               &trans                   &trans  &trans
+&trans     &kp RC(Z)  &kp RC(X)  &kp RC(C)  &kp RC(V)    &trans  &trans                  &trans                   &trans  &trans
+                      &trans     &trans     &trans       &trans  &kp LC(LG(LEFT_ARROW))  &kp LG(LC(RIGHT_ARROW))
             >;
         };
     };
