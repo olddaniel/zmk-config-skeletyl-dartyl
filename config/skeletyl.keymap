@@ -101,7 +101,7 @@
             label = "FUNC";
             bindings = <
 &trans     &kp RC(W)  &trans     &trans     &kp RC(T)    &trans  &trans                  &trans                   &trans  &trans
-&kp RC(A)  &trans     &trans     &trans     &trans       &trans  &kp RC(J)               &trans                   &trans  &trans
+&kp RC(A)  &kp LC(S)  &trans     &trans     &trans       &trans  &kp RC(J)               &trans                   &trans  &trans
 &trans     &kp RC(Z)  &kp RC(X)  &kp RC(C)  &kp RC(V)    &trans  &trans                  &trans                   &trans  &trans
                       &trans     &trans     &trans       &trans  &kp LC(LG(LEFT_ARROW))  &kp LG(LC(RIGHT_ARROW))
             >;
