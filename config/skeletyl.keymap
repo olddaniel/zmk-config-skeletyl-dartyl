@@ -80,7 +80,7 @@
             bindings = <
 &kp F1   &kp F2   &kp F3  &kp F4     &kp F5       &trans          &trans          &kp UP_ARROW      &trans           &trans
 &kp F6   &kp F7   &kp F8  &kp F9     &kp F10      &bt BT_NXT      &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &trans
-&kp F11  &kp F12  &trans  &kp PG_DN  &kp PG_UP    &bt BT_CLR_ALL  &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT       &trans
+&kp F11  &kp F12  &kp C   &kp PG_DN  &kp PG_UP    &bt BT_CLR_ALL  &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT       &trans
                   &trans  &trans     &trans       &trans          &trans          &trans
             >;
 
