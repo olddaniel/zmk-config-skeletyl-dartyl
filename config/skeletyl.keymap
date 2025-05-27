@@ -82,10 +82,10 @@
 
         Navigation {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans    &trans  &trans  &trans
+&kp F2  &kp LG(F)  &kp L   &kp DOT  &kp N4    &trans  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
+&trans  &trans     &trans  &trans   &kp N3    &trans  &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
+&kp R   &kp N      &kp T   &kp W    &kp Q     &trans  &trans    &trans     &trans     &trans
+                   &trans  &trans   &trans    &trans  &trans    &trans
             >;
         };
 
