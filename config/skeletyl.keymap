@@ -213,10 +213,10 @@
 
         BASE {
             bindings = <
-&trans  &kp Y   &trans  &trans  &trans    &trans     &kp L            &kp D   &kp W              &kp J
-&trans  &trans  &trans  &trans  &kp G     &kp H      &hm RIGHT_GUI J  &kp T   &hm RIGHT_SHIFT L  &kp N
-&kp V   &kp X   &kp G   &kp K   &kp Z     &kp Q      &kp R            &kp M   &kp F              &hm RCTRL SLASH
-                &trans  &trans  &trans    &kp ENTER  &trans           &trans
+&B_Ampersand                     &kp Y           &o_masculine_ordinal  &U_underscore                &Apost_Pipe    &question_at  &kp L            &kp D     &kp W      &kp J
+&shift_C_Cecedilha LEFT_SHIFT 0  &hm LEFT_ALT I  &hm LEFT_COMMAND E    &control_A_feminine_ordinal  &comma_semi    &dot_colon    &H_hashtag       &kp T     &S_dollar  &kp N
+&kp V                            &kp X           &kp G                 &kp K                        &kp Z          &kp Q         &kp R            &kp M     &kp F      &P_percentage
+                                                 &backspace_delete     &lt 1 SPACE                  &lt 2 TAB      &kp ENTER     &ultimate_shift  &kp RGUI
             >;
 
             label = "BASE";
