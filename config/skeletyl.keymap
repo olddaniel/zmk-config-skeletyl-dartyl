@@ -1,6 +1,6 @@
+#include "keys_pt_abnt2.h"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <keys_pt_abnt2.h>
 
 &sk {
     release-after-ms = <1500>;
