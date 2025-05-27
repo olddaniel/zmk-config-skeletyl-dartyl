@@ -23,6 +23,147 @@
             hold-trigger-key-positions = <20 10 30 31 32 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33 34 35>;
             hold-trigger-on-release;
         };
+
+        cecedilha: cecedilha {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CECEDILHA";
+            bindings = <&kp C>, <&kp PT_C_CEDILLA>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
+
+        question_at: question_at {
+            compatible = "zmk,behavior-mod-morph";
+            label = "QUESTION_AT";
+            bindings = <&kp PT_QUESTION>, <&kp PT_AT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        dot_colon: dot_colon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOT_COLON";
+            bindings = <&kp PT_DOT>, <&kp PT_COLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        o_masculine_ordinal: o_masculine_ordinal {
+            compatible = "zmk,behavior-mod-morph";
+            label = "O_MASCULINE_ORDINAL";
+            bindings = <&kp PT_O>, <&kp PT_MASCULINE_ORDINAL_INDICATOR>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
+
+        control_A_feminine_ordinal: control_A_feminine_ordinal {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CONTROL_A_FEMININE_ORDINAL";
+            bindings =
+                <&hm LEFT_CONTROL PT_A>,
+                <&kp PT_FEMININE_ORDINAL_INDICATOR>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
+
+        backspace_delete: backspace_delete {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BACKSPACE_DELETE";
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        comma_semi: comma_semi {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_SEMI";
+            bindings = <&kp PT_COMMA>, <&kp PT_SEMICOLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        P_percentage: P_percentage {
+            compatible = "zmk,behavior-mod-morph";
+            label = "P_PERCENTAGE";
+            bindings = <&kp P>, <&kp PT_PERCENT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
+
+        B_Ampersand: B_Ampersand {
+            compatible = "zmk,behavior-mod-morph";
+            label = "B_AMPERSAND";
+            bindings = <&kp B>, <&kp PT_AMPERSAND>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
+
+        U_underscore: U_underscore {
+            compatible = "zmk,behavior-mod-morph";
+            label = "U_UNDERSCORE";
+            bindings = <&kp U>, <&kp PT_UNDERSCORE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
+
+        shift_C_Cecedilha: shift_C_Cecedilha {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SHIFT_C_CECEDILHA";
+            bindings = <&kp>, <&cecedilha>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33 34 35>;
+            hold-trigger-on-release;
+        };
+
+        ultimate_shift: ultimate_shift {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ULTIMATE_SHIFT";
+            #binding-cells = <0>;
+            tapping-term-ms = <180>;
+            bindings = <&sk LEFT_SHIFT>, <&caps_word>, <&kp CAPSLOCK>;
+        };
+
+        H_hashtag: H_hashtag {
+            compatible = "zmk,behavior-mod-morph";
+            label = "H_HASHTAG";
+            bindings = <&kp H>, <&kp PT_HASH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
+
+        S_dollar: S_dollar {
+            compatible = "zmk,behavior-mod-morph";
+            label = "S_DOLLAR";
+            bindings = <&kp S>, <&kp PT_DOLLAR>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
+
+        Apost_Pipe: Apost_Pipe {
+            compatible = "zmk,behavior-mod-morph";
+            label = "APOST_PIPE";
+            bindings = <&kp PT_APOS>, <&kp PT_PIPE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
