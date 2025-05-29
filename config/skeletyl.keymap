@@ -164,6 +164,24 @@
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
         };
+
+        slash_comma: slash_comma {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SLASH_COMMA";
+            bindings = <&kp KP_SLASH>, <&kp KP_COMMA>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        zero_dot: zero_dot {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ZERO_DOT";
+            bindings = <&kp KP_NUMBER_0>, <&kp KP_DOT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
@@ -234,7 +252,7 @@
         Math {
             bindings = <
 &kp PT_LEFT_BRACKET     &kp PT_RIGHT_BRACKET   &kp PT_LEFT_PARENTHESIS    &kp PT_RIGHT_PARENTHESIS  &kp PT_EXCL         &trans     &kp PT_ACUTE  &kp PT_TILDE  &kp PT_CARET  &kp PT_GRAVE
-&hm LEFT_SHIFT PT_PLUS  &hm LEFT_ALT PT_MINUS  &hm LEFT_COMMAND PT_EQUAL  &hm LEFT_CONTROL PT_STAR  &kp PT_SLASH        &kp KP_N0  &kp KP_N1     &kp KP_N2     &kp KP_N3     &kp KP_N4
+&hm LEFT_SHIFT PT_PLUS  &hm LEFT_ALT PT_MINUS  &hm LEFT_COMMAND PT_EQUAL  &hm LEFT_CONTROL PT_STAR  &slash_comma        &zero_dot  &kp KP_N1     &kp KP_N2     &kp KP_N3     &kp KP_N4
 &kp PT_LEFT_BRACE       &kp PT_RIGHT_BRACE     &kp PT_LESS_THAN           &kp PT_GREATER_THAN       &kp PT_BACKSLASH    &kp KP_N5  &kp KP_N6     &kp KP_N7     &kp KP_N8     &kp KP_N9
                                                &trans                     &trans                    &trans              &trans     &trans        &trans
             >;
