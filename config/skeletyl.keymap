@@ -224,6 +224,34 @@
             key-positions = <33 32>;
             layers = <2>;
         };
+
+        ksc_the {
+            bindings = <&m_ksc_the>;
+            key-positions = <17 16 12>;
+            layers = <0>;
+        };
+
+        ksc_the_space {
+            bindings = <&m_ksc_the_space>;
+            key-positions = <17 16 12 31>;
+            layers = <0>;
+        };
+    };
+
+    macros {
+        m_ksc_the: m_ksc_the {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp H &kp E>;
+            label = "M_KSC_THE";
+        };
+
+        m_ksc_the_space: m_ksc_the_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp H &kp E &kp SPACE>;
+            label = "M_KSC_THE_SPACE";
+        };
     };
 
     keymap {
