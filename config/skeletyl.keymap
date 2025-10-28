@@ -374,6 +374,30 @@
             key-positions = <11 22 19>;
             layers = <0>;
         };
+
+        ksc_download {
+            bindings = <&m_ksc_download>;
+            key-positions = <19 6 7 8>;
+            layers = <0>;
+        };
+
+        ksc_cao {
+            bindings = <&m_skc_cao>;
+            key-positions = <10 11 2 13>;
+            layers = <0>;
+        };
+
+        ksc_coes {
+            bindings = <&m_ksc_coes>;
+            key-positions = <10 11 2 18>;
+            layers = <0>;
+        };
+
+        ksc_nao {
+            bindings = <&m_ksc_nao>;
+            key-positions = <2 19 13>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -550,6 +574,34 @@
             #binding-cells = <0>;
             bindings = <&kp I &kp N &kp G>;
             label = "M_KSC_ING";
+        };
+
+        m_ksc_download: m_ksc_download {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp O &kp W &kp N &kp L &kp O &kp A &kp D>;
+            label = "M_KSC_DOWNLOAD";
+        };
+
+        m_skc_cao: m_skc_cao {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp PT_C_CEDILLA &kp PT_TILDE &kp A &kp O>;
+            label = "M_SKC_CAO";
+        };
+
+        m_ksc_coes: m_ksc_coes {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp PT_C_CEDILLA &kp PT_TILDE &kp O &kp E &kp S>;
+            label = "M_KSC_COES";
+        };
+
+        m_ksc_nao: m_ksc_nao {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp PT_TILDE &kp A &kp O>;
+            label = "M_KSC_NAO";
         };
     };
 
