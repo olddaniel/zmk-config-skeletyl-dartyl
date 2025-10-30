@@ -383,7 +383,7 @@
 
         ksc_cao {
             bindings = <&m_skc_cao>;
-            key-positions = <10 11 2 13>;
+            key-positions = <10 2 13 11>;
             layers = <0>;
         };
 
@@ -586,21 +586,21 @@
         m_skc_cao: m_skc_cao {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp PT_C_CEDILLA &kp PT_TILDE &kp A &kp O>;
+            bindings = <&kp PT_C_CEDILLA &kp A &kp O>;
             label = "M_SKC_CAO";
         };
 
         m_ksc_coes: m_ksc_coes {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp PT_C_CEDILLA &kp PT_TILDE &kp O &kp E &kp S>;
+            bindings = <&kp PT_C_CEDILLA &kp O &kp E &kp S>;
             label = "M_KSC_COES";
         };
 
         m_ksc_nao: m_ksc_nao {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N &kp PT_TILDE &kp A &kp O>;
+            bindings = <&kp N &kp A &kp O>;
             label = "M_KSC_NAO";
         };
     };
