@@ -239,7 +239,7 @@
 
         ksc_ing_space {
             bindings = <&m_ksc_ing_space>;
-            key-positions = <11 19 22 31>;
+            key-positions = <11 19 22>;
             layers = <0>;
         };
 
@@ -366,12 +366,6 @@
         ksc_ld {
             bindings = <&m_ksc_ld>;
             key-positions = <6 7>;
-            layers = <0>;
-        };
-
-        ksc_ing {
-            bindings = <&m_ksc_ing>;
-            key-positions = <11 22 19>;
             layers = <0>;
         };
 
@@ -569,13 +563,6 @@
             label = "M_KSC_LD";
         };
 
-        m_ksc_ing: m_ksc_ing {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp I &kp N &kp G>;
-            label = "M_KSC_ING";
-        };
-
         m_ksc_download: m_ksc_download {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -586,14 +573,14 @@
         m_skc_cao: m_skc_cao {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp PT_C_CEDILLA &kp A &kp O>;
+            bindings = <&kp PT_C_CEDILLA &kp A &kp O &kp SPACE>;
             label = "M_SKC_CAO";
         };
 
         m_ksc_coes: m_ksc_coes {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp PT_C_CEDILLA &kp O &kp E &kp S>;
+            bindings = <&kp PT_C_CEDILLA &kp O &kp E &kp S &kp SPACE>;
             label = "M_KSC_COES";
         };
 
