@@ -410,6 +410,12 @@
             key-positions = <25 11>;
             layers = <0>;
         };
+
+        ksc_you {
+            bindings = <&m_ksc_qui>;
+            key-positions = <1 2 3>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -628,6 +634,13 @@
             #binding-cells = <0>;
             bindings = <&kp Q &kp U &kp I>;
             label = "M_KSC_QUI";
+        };
+
+        m_ksc_you: m_ksc_you {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp O &kp U>;
+            label = "M_KSC_YOU";
         };
     };
 
