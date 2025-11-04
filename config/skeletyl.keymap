@@ -392,6 +392,24 @@
             key-positions = <2 19 13>;
             layers = <0>;
         };
+
+        ksc_que {
+            bindings = <&m_ksc_que>;
+            key-positions = <25 12>;
+            layers = <0>;
+        };
+
+        ksc_qua {
+            bindings = <&m_ks_qua>;
+            key-positions = <25 13>;
+            layers = <0>;
+        };
+
+        ksc_qui {
+            bindings = <&m_ksc_qui>;
+            key-positions = <25 11>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -589,6 +607,27 @@
             #binding-cells = <0>;
             bindings = <&kp N &kp A &kp O>;
             label = "M_KSC_NAO";
+        };
+
+        m_ksc_que: m_ksc_que {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Q &kp U &kp E>;
+            label = "M_KSC_QUE";
+        };
+
+        m_ks_qua: m_ks_qu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Q &kp U &kp A>;
+            label = "M_KS_QU";
+        };
+
+        m_ksc_qui: m_ksc_qui {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Q &kp U &kp I>;
+            label = "M_KSC_QUI";
         };
     };
 
