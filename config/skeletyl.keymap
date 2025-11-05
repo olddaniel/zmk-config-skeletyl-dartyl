@@ -416,6 +416,16 @@
             key-positions = <1 2 3>;
             layers = <0>;
         };
+
+        ksc_ion {
+            bindings = <&m_ksc_ion>;
+            key-positions = <11 2 18>;
+        };
+
+        ksc_ions {
+            bindings = <&m_ksc_ions>;
+            key-positions = <11 2 18 19>;
+        };
     };
 
     macros {
@@ -641,6 +651,20 @@
             #binding-cells = <0>;
             bindings = <&kp Y &kp O &kp U>;
             label = "M_KSC_YOU";
+        };
+
+        m_ksc_ions: m_ksc_ions {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp O &kp N &kp S>;
+            label = "M_KSC_IONS";
+        };
+
+        m_ksc_ion: m_ksc_ion {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp O &kp N>;
+            label = "M_KSC_ION";
         };
     };
 
