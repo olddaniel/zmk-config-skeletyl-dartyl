@@ -457,6 +457,48 @@
             key-positions = <11 19 22 18>;
             layers = <0>;
         };
+
+        ksc_ch {
+            bindings = <&m_ksc_ch>;
+            key-positions = <10 16>;
+            layers = <0>;
+        };
+
+        ksc_cha {
+            bindings = <&m_ksc_cha>;
+            key-positions = <10 16 13>;
+            layers = <0>;
+        };
+
+        ksc_che {
+            bindings = <&m_ksc_che>;
+            key-positions = <10 16 12>;
+            layers = <0>;
+        };
+
+        ksc_chi {
+            bindings = <&m_ksc_chi>;
+            key-positions = <10 16 11>;
+            layers = <0>;
+        };
+
+        ksc_cho {
+            bindings = <&m_ksc_cho>;
+            key-positions = <10 16 2>;
+            layers = <0>;
+        };
+
+        ksc_chu {
+            bindings = <&m_ksc_chu>;
+            key-positions = <10 16 3>;
+            layers = <0>;
+        };
+
+        ksc_ph {
+            bindings = <&m_ksc_ph>;
+            key-positions = <16 29>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -929,11 +971,46 @@
             label = "M_KSC_CHO";
         };
 
-        m_chu: m_chu {
+        m_ksc_chu: m_chu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp C &kp H &kp U>;
             label = "M_CHU";
+        };
+
+        m_ksc_pha: m_ksc_pha {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp P &kp H &kp A>;
+            label = "M_KSC_PHA";
+        };
+
+        m_ksc_phe: m_ksc_phe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp P &kp H &kp E>;
+            label = "M_KSC_PHE";
+        };
+
+        m_ksc_phi: m_ksc_phi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp P &kp H &kp I>;
+            label = "M_KSC_PHI";
+        };
+
+        m_ksc_phy: m_ksc_phy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp P &kp H &kp Y>;
+            label = "M_KSC_PHY";
+        };
+
+        m_ksc_pho: m_ksc_pho {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp P &kp H &kp O>;
+            label = "M_KSC_PHO";
         };
     };
 
