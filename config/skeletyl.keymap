@@ -900,6 +900,41 @@
             bindings = <&kp S &kp C &kp R &kp U>;
             label = "M_KSC_SCRU";
         };
+
+        m_ksc_cha: m_ksc_cha {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp H &kp A>;
+            label = "M_KSC_CHA";
+        };
+
+        m_ksc_che: m_ksc_che {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp H &kp E>;
+            label = "M_KSC_CHE";
+        };
+
+        m_ksc_chi: m_ksc_chi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp H &kp I>;
+            label = "M_KSC_CHI";
+        };
+
+        m_ksc_cho: m_ksc_cho {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp H &kp O>;
+            label = "M_KSC_CHO";
+        };
+
+        m_chu: m_chu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp H &kp U>;
+            label = "M_CHU";
+        };
     };
 
     keymap {
