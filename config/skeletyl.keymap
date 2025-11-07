@@ -499,6 +499,72 @@
             key-positions = <16 29>;
             layers = <0>;
         };
+
+        ksc_pha {
+            bindings = <&m_ksc_pha>;
+            key-positions = <16 29 13>;
+            layers = <0>;
+        };
+
+        ksc_phe {
+            bindings = <&m_ksc_phe>;
+            key-positions = <16 29 12>;
+            layers = <0>;
+        };
+
+        ksc_phi {
+            bindings = <&m_ksc_phi>;
+            key-positions = <16 29 11>;
+            layers = <0>;
+        };
+
+        ksc_pho {
+            bindings = <&m_ksc_pho>;
+            key-positions = <16 29 2>;
+            layers = <0>;
+        };
+
+        ksc_phy {
+            bindings = <&m_ksc_phy>;
+            key-positions = <16 29 1>;
+            layers = <0>;
+        };
+
+        ksc_ck {
+            bindings = <&m_ksc_ck>;
+            key-positions = <10 23>;
+            layers = <0>;
+        };
+
+        ksc_less {
+            bindings = <&m_ksc_less>;
+            key-positions = <6 12 17>;
+            layers = <0>;
+        };
+
+        ksc_ng {
+            bindings = <&m_ksc_ng>;
+            key-positions = <18 22>;
+            layers = <0>;
+        };
+
+        ksc_stra {
+            bindings = <&m_ksc_stra>;
+            key-positions = <18 17 26 13>;
+            layers = <0>;
+        };
+
+        ksc_stre {
+            bindings = <&m_ksc_stre>;
+            key-positions = <18 17 26 12>;
+            layers = <0>;
+        };
+
+        ksc_stri {
+            bindings = <&m_ksc_stri>;
+            key-positions = <18 17 26 11>;
+            layers = <0>;
+        };
     };
 
     macros {
