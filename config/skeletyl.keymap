@@ -426,6 +426,26 @@
             bindings = <&m_ksc_ions>;
             key-positions = <11 2 18 19>;
         };
+
+        ksc_your {
+            bindings = <&m_ksc_your>;
+            key-positions = <2 1 3 26>;
+        };
+
+        ksc_then {
+            bindings = <&m_ksc_then>;
+            key-positions = <17 16 12 19>;
+        };
+
+        ksc_than {
+            bindings = <&m_ksc_than>;
+            key-positions = <17 16 19 13>;
+        };
+
+        ksc_encia {
+            bindings = <&m_ksc_encia>;
+            key-positions = <19 13 10 11 12>;
+        };
     };
 
     macros {
@@ -495,14 +515,14 @@
         m_ksc_ould: m_ksc_ould {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp O &kp U &kp L &kp D>;
+            bindings = <&kp O &kp U &kp L &kp D &kp SPACE>;
             label = "M_KSC_OULD";
         };
 
         m_ksc_ight: m_ksc_ight {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp I &kp G &kp H &kp T>;
+            bindings = <&kp I &kp G &kp H &kp T &kp SPACE>;
             label = "M_KSC_IGHT";
         };
 
@@ -537,7 +557,7 @@
         m_ksc_and: m_ksc_and {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp A &kp N &kp D>;
+            bindings = <&kp A &kp N &kp D &kp SPACE>;
             label = "M_KSC_AND";
         };
 
@@ -600,7 +620,7 @@
         m_ksc_download: m_ksc_download {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp D &kp O &kp W &kp N &kp L &kp O &kp A &kp D>;
+            bindings = <&kp D &kp O &kp W &kp N &kp L &kp O &kp A &kp D &kp SPACE>;
             label = "M_KSC_DOWNLOAD";
         };
 
@@ -621,7 +641,7 @@
         m_ksc_nao: m_ksc_nao {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N &kp A &kp O>;
+            bindings = <&kp N &kp A &kp O &kp SPACE>;
             label = "M_KSC_NAO";
         };
 
@@ -649,22 +669,50 @@
         m_ksc_you: m_ksc_you {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp Y &kp O &kp U>;
+            bindings = <&kp Y &kp O &kp U &kp SPACE>;
             label = "M_KSC_YOU";
         };
 
         m_ksc_ions: m_ksc_ions {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp I &kp O &kp N &kp S>;
+            bindings = <&kp I &kp O &kp N &kp S &kp SPACE>;
             label = "M_KSC_IONS";
         };
 
         m_ksc_ion: m_ksc_ion {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp I &kp O &kp N>;
+            bindings = <&kp I &kp O &kp N &kp SPACE>;
             label = "M_KSC_ION";
+        };
+
+        m_ksc_your: m_ksc_your {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp O &kp U &kp R &kp SPACE>;
+            label = "M_KSC_YOUR";
+        };
+
+        m_ksc_then: m_ksc_then {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp H &kp E &kp N &kp SPACE>;
+            label = "M_KSC_THEN";
+        };
+
+        m_ksc_than: m_ksc_than {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp H &kp A &kp N &kp SPACE>;
+            label = "M_KSC_THAN";
+        };
+
+        m_ksc_encia: m_ksc_encia {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp E &kp N &kp C &kp I &kp A &kp SPACE>;
+            label = "M_KSC_ENCIA";
         };
     };
 
