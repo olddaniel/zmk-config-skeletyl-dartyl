@@ -237,8 +237,8 @@
             layers = <0>;
         };
 
-        ksc_ing_space {
-            bindings = <&m_ksc_ing_space>;
+        ksc_ing {
+            bindings = <&m_ksc_ing>;
             key-positions = <11 19 22>;
             layers = <0>;
         };
@@ -446,6 +446,17 @@
             bindings = <&m_ksc_encia>;
             key-positions = <19 13 10 11 12>;
         };
+
+        ksc_nt {
+            bindings = <&m_ksc_nt>;
+            key-positions = <19 17>;
+        };
+
+        ksc_ings {
+            bindings = <&m_ksc_ings>;
+            key-positions = <11 19 22 18>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -463,7 +474,7 @@
             label = "M_KSC_THE_SPACE";
         };
 
-        m_ksc_ing_space: m_ksc_ing_space {
+        m_ksc_ing: m_ksc_ing_space {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp I &kp N &kp G &kp SPACE>;
@@ -713,6 +724,20 @@
             #binding-cells = <0>;
             bindings = <&kp E &kp N &kp C &kp I &kp A &kp SPACE>;
             label = "M_KSC_ENCIA";
+        };
+
+        m_ksc_nt: m_ksc_nt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp T>;
+            label = "M_KSC_NT";
+        };
+
+        m_ksc_ings: m_ksc_ings {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp N &kp G &kp S &kp SPACE>;
+            label = "M_KSC_INGS";
         };
     };
 
