@@ -1078,6 +1078,34 @@
             bindings = <&kp P &kp H &kp O>;
             label = "M_KSC_PHO";
         };
+
+        m_ksc_inho: m_ksc_inho {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp N &kp H &kp O &kp SPACE>;
+            label = "M_KSC_INHO";
+        };
+
+        m_ksc_inhos: m_ksc_inhos {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp N &kp H &kp O &kp S &kp SPACE>;
+            label = "M_KSC_INHOS";
+        };
+
+        m_ksc_inha: m_ksc_inha {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp N &kp H &kp A &kp SPACE>;
+            label = "M_KSC_INHA";
+        };
+
+        m_ksc_inhas: m_ksc_inhas {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp N &kp H &kp A &kp S &kp SPACE>;
+            label = "M_KSC_INHAS";
+        };
     };
 
     keymap {
