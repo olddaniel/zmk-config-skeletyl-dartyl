@@ -412,7 +412,7 @@
         };
 
         ksc_you {
-            bindings = <&m_ksc_qui>;
+            bindings = <&m_ksc_you>;
             key-positions = <1 2 3>;
             layers = <0>;
         };
